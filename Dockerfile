@@ -4,6 +4,9 @@ FROM alpine:latest
 # Set the working directory to /app
 WORKDIR /app
 
+# Install curl
+RUN apk --no-cache add curl
+
 # Copy the shell script into the container at /app
 COPY script.sh /app/
 
