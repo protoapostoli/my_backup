@@ -7,7 +7,7 @@ WORKDIR /app
 # Install curl
 RUN apk --no-cache add curl
 
-# Copy the shell script into the container at /app
+# Copy the shell script into the container at /app as
 COPY script.sh /app/
 
 # Make the shell script executable
