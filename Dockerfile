@@ -14,4 +14,4 @@ COPY script.sh /app/
 RUN chmod +x /app/script.sh
 
 # Run the shell script when the container launches
-CMD ["sh", "-c", "/app/script.sh && echo 'Script completed, shutting down...' && sleep 5 && halt"]
+CMD ["sh", "-c", "/app/script.sh && echo 'Script completed, shutting down...' && sleep 5 && poweroff"]
